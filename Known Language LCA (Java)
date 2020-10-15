@@ -1,0 +1,117 @@
+
+/* Software Engineering CSU33021 
+    Lowest Common Ancestor problem using my known language - JAVA
+    I used this opportunity to use a different IDE than Eclipse which I
+    have used for Java for 2 years, Visual Studio Code.
+
+    -Andrew Mc Donald - 18318748
+*/
+import java.util.ArrayList; 
+import java.util.List; 
+
+
+class Node { 
+	int data; 
+	Node l, r; 
+
+	Node(int value) { 
+		data = value; 
+		l = r = null; 
+	} 
+} 
+
+public class LCAjava 
+{ 
+
+	Node root; 
+	private List<Integer> pathA = new ArrayList<>(); 
+	private List<Integer> pathB = new ArrayList<>(); 
+
+
+	int findLCA(int nodeA, int nodeB) { 
+		pathA.clear(); 
+		pathB.clear(); 
+		return findLCAInternal(root, nodeA, nodeB); 
+	} 
+
+	private int findLCAInternal(Node root, int nodeA, int nodeB) { 
+
+		if (!findPath(root, nodeA, pathA) || !findPath(root, nodeB, pathB)) { 
+			System.out.println((pathA.size() > 0) ? "nodeA is present" : "nodeA is missing"); 
+			System.out.println((pathB.size() > 0) ? "nodeB is present" : "nodeB is missing"); 
+			return -1; 
+		} 
+
+		int i;
+		for (i = 0; i < pathA.size() && i < pathB.size(); i++) { 
+			 
+			if (!pathA.get(i).equals(pathB.get(i))) 
+				break; 
+		} 
+
+		return pathA.get(i-1); 
+	} 
+	
+	private boolean findPath(Node root, int n, List<Integer> path) 
+	{ 
+		 
+		if (root == null) { 
+			return false; 
+		} 
+		
+		
+		path.add(root.data); 
+
+		if (root.data == n) { 
+			return true; 
+		} 
+
+		if (root.l != null && findPath(root.l, n, path)) { 
+			return true; 
+		} 
+
+		if (root.r != null && findPath(root.r, n, path)) { 
+			return true; 
+		} 
+
+	
+		path.remove(path.size()-1); 
+
+		return false; 
+	} 
+
+     /*
+        Tree Diagram :
+            
+
+                                    1
+                                /       \
+                            2               3
+                        /       \         /     \
+                     4            5      6        7
+
+
+
+
+
+
+     */
+	public static void main(String[] args) 
+	{ 
+		LCAjava tree = new LCAjava(); 
+		tree.root = new Node(1); 
+		tree.root.l = new Node(2); 
+		tree.root.r = new Node(3); 
+		tree.root.l.l = new Node(4); 
+		tree.root.l.r = new Node(5); 
+		tree.root.r.l = new Node(6); 
+		tree.root.r.r = new Node(7); 
+
+		System.out.println("LCA(4, 3): " + tree.findLCA(4,3)); 
+		System.out.println("LCA(4, 6): " + tree.findLCA(4,6)); 
+		System.out.println("LCA(3, 4): " + tree.findLCA(3,4)); 
+		System.out.println("LCA(2, 7): " + tree.findLCA(2,7)); 
+	
+	} 
+} 
+ 
