@@ -1,0 +1,78 @@
+
+
+
+class Node: 
+	
+	def __init__(self, key): 
+		self.key = key 
+		self.l = None
+		self.r = None
+
+def findPath( root, path, k): 
+
+	
+	if root is None: 
+		return False
+
+	path.append(root.key) 
+
+	if root.key == k : 
+		return True
+
+	if ((root.l != None and findPath(root.l, path, k)) or
+			(root.r!= None and findPath(root.r, path, k))): 
+		return True
+
+	
+	path.pop() 
+	return False
+
+def findLCA(root, nodeA, nodeB): 
+
+	pathA = [] 
+	pathB = [] 
+
+	if (not findPath(root, pathA, nodeA) or not findPath(root, pathB, nodeB)): 
+		return -1
+
+	i = 0
+	while(i < len(pathA) and i < len(pathB)): 
+		if pathA[i] != pathB[i]: 
+			break
+		i += 1
+	return pathA[i-1] 
+
+
+root = Node(1) 
+root.l = Node(2) 
+root.r = Node(3) 
+root.l.l = Node(4) 
+root.l.r = Node(5) 
+root.r.l = Node(6) 
+root.r.r = Node(7) 
+
+
+
+        
+#         Tree Diagram :  
+
+#                                   1
+#                               /       \
+#                           2               3
+#                       /       \         /     \
+#                     4            5     6        7
+
+
+
+
+
+
+
+
+print ("LCA(4, 3) = %d" %(findLCA(root, 4, 3,)))
+print ("LCA(4, 6) = %d" %(findLCA(root, 4, 6))) 
+print ("LCA(3, 4) = %d" %(findLCA(root,3,4)) )
+print ("LCA(2, 7) = %d" %(findLCA(root,2, 7)) )
+print ("LCA(6, 7) = %d" %(findLCA(root,6, 7)) )
+
+
