@@ -1,5 +1,11 @@
+import java.util.*;
 
 public class JavaLCADAG {
+	public static final int FOUND_A = -2;
+	public static final int FOUND_B = -3;
+
+	public JavaLCADAG() {
+}
 	class treeNode {
 			public ArrayList<treeNode> children;
 			public int data;
