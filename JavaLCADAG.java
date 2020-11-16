@@ -103,4 +103,13 @@ public class JavaLCADAG {
 		return -1;
 
 	}
+	public static int getDAG_LCA(DAG theDAG, int keyA, int keyB) {
+
+		DAG.treeNode currenttreeNode = theDAG.head;
+
+		int thetreeNodeKey = bothInSubtreeOf(currenttreeNode, keyA, keyB);
+		if (thetreeNodeKey < 0)
+			return -1;
+		return thetreeNodeKey;
+	}
 }
