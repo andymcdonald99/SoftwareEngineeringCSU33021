@@ -1,41 +1,68 @@
 
 public class JavaLCADAG {
-	public class treeNode {
-		treeNode parent, childLeft, childRight;
-		int data;
+	class treeNode {
+			public ArrayList<treeNode> children;
+			public int data;
 
-		treeNode(int data, treeNode parent, treeNode childLeft, treeNode childRight) {
-			this.data = data;
-			this.parent = parent;
-			this.childLeft = childLeft;
-			this.childRight = childRight;
-		}
-	
-	}
-
-	public class binaryTree {
-		treeNode head;
-
-		binaryTree() {
-			head = null;
-		}
-
-		public int getKey(treeNode theNode) {
-			if (theNode != null)
-				return theNode.data;
-			return -1;
-		}
-
-		public void add(int data, treeNode parent, boolean isLeft) {
-			treeNode newNode = new treeNode(data, parent, null, null);
-			if (head == null) { 
-				head = newNode;
-				return;
+			treeNode(int data) {
+				children = new ArrayList<treeNode>();
+				this.data = data;
 			}
-			if (isLeft)
-				parent.childLeft = newNode;
-			else
-				parent.childRight = newNode;
+		}
+
+	public class DAG {
+		treeNode head = null;
+
+		
+		public void addtreeNode(int data, ArrayList<treeNode> parents) {
+			treeNode thetreeNode = new treeNode(data);
+			if (head == null)
+				head = thetreeNode;
+			if (parents != null)
+				for (treeNode parenttreeNode : parents)
+					if (parenttreeNode != null)
+						parenttreeNode.children.add(thetreeNode);
+		}
+
+		public treeNode gettreeNodeWithKey(int data) {
+			if (head != null) {
+				return gettreeNodeRec(data, head);
+			}
+			return null;
+		}
+
+		private treeNode gettreeNodeRec(int data, treeNode treeNode) {
+			for (treeNode child : treeNode.children) {
+				treeNode theRettreeNode = gettreeNodeRec(data, child);
+				if (theRettreeNode != null)
+					return theRettreeNode;
+			}
+			if (treeNode.data == data)
+				return treeNode;
+			return null;
+		}
+
+		public String printChildren(treeNode treeNode) {
+			String children = "";
+			for (treeNode child : treeNode.children)
+				children += child.data + "  ";
+			return children;
+		}
+
+		public ArrayList<treeNode> getChildren(treeNode treeNode) {
+			if (treeNode != null)
+				return treeNode.children;
+			return null;
+		}
+
+		class treeNode {
+			public ArrayList<treeNode> children;
+			public int data;
+
+			treeNode(int data) {
+				children = new ArrayList<treeNode>();
+				this.data = data;
+			}
 		}
 	}
 }
