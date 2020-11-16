@@ -65,4 +65,42 @@ public class JavaLCADAG {
 			}
 		}
 	}
+	private static int bothInSubtreeOf(DAG.treeNode currenttreeNode, int keyA, int keyB) {
+		int currenttreeNodeVal = currenttreeNode.data;
+		boolean foundA = false;
+		boolean foundB = false;
+		for (int i = 0; i < currenttreeNode.children.size(); i++) {
+			int subTreeOf = bothInSubtreeOf(currenttreeNode.children.get(i), keyA, keyB);
+			if (subTreeOf >= 0) {
+				return subTreeOf;
+			} else {
+				if (subTreeOf == FOUND_B)
+					foundB = true;
+				if (subTreeOf == FOUND_A)
+					foundA = true;
+			}
+		}
+		if (foundA && foundB)
+			return currenttreeNodeVal;
+		if (foundA && currenttreeNodeVal == keyB)
+			return currenttreeNodeVal;
+		if (foundB && currenttreeNodeVal == keyA)
+			return currenttreeNodeVal;
+
+		if (foundA)
+			return FOUND_A;
+		if (foundB)
+			return FOUND_B;
+
+		if (currenttreeNodeVal == keyA && currenttreeNodeVal == keyB)
+			return currenttreeNodeVal;
+
+		if (currenttreeNodeVal == keyA)
+			return FOUND_A;
+		if (currenttreeNodeVal == keyB)
+			return FOUND_B;
+
+		return -1;
+
+	}
 }
