@@ -30,7 +30,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\bin"
-libdir     = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\lib\\x86_64-windows-ghc-8.8.4\\github-get-0.1.0.0-IIkdehK1LZIJQ7hNC6Evvr-github-get-exe"
+libdir     = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\lib\\x86_64-windows-ghc-8.8.4\\github-get-0.1.0.0-G51C3n0raVn1MBAyS8Dr50-github-get-exe"
 dynlibdir  = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\lib\\x86_64-windows-ghc-8.8.4"
 datadir    = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\share\\x86_64-windows-ghc-8.8.4\\github-get-0.1.0.0"
 libexecdir = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\libexec\\x86_64-windows-ghc-8.8.4\\github-get-0.1.0.0"
