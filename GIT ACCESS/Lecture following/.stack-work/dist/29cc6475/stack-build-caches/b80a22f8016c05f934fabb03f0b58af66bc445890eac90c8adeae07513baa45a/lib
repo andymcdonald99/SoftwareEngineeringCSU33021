@@ -1,7 +1,7 @@
 C:\Users\andym\Documents\GitHub\github-get\.stack-work\dist\29cc6475\build\autogen\cabal_macros.h:
   hash: a6162f7250c1e3550efbf50a576c347d490058b504411238678b9b78dfb1bdbc
 C:\Users\andym\Documents\GitHub\github-get\src\GitHub.hs:
-  hash: eea7be0f38b2bf6794f5a7dd7afd0c28e9e9d4ed2b5f3bc88903e1bacd113818
+  hash: 38656cc65de42a795c7b22ac0f252bfb2942e718377003cfc2480da2a0c6a27c
 C:\Users\andym\Documents\GitHub\github-get\README.md:
   hash: bf9c96dcef09bdfebb7d1a139721f5e82f8cd69385012ef700a609d945810d63
 C:\Users\andym\Documents\GitHub\github-get\github-get.cabal:
@@ -9,7 +9,7 @@ C:\Users\andym\Documents\GitHub\github-get\github-get.cabal:
 C:\Users\andym\Documents\GitHub\github-get\ChangeLog.md:
   hash: 6e0bb4433e86f8cd122c7909955f97806c2c901429109afc78edcae5337408fd
 C:\Users\andym\Documents\GitHub\github-get\src\Lib.hs:
-  hash: 826ab3846e5ca183638764130b501b0ab7fe739aeaeeab4d7016ec60bd9e2dcc
+  hash: 7a596e9139a0690dacb19bdba6ce65b5d972c68514f540adf7da531285bbfd82
 C:\Users\andym\Documents\GitHub\github-get\.stack-work\dist\29cc6475\build\autogen\Paths_github_get.hs:
   hash: 280f29d4d43a4d3e22961f869b9c8c329389c82b17b77db00687e76d6b91fcb4
 C:\Users\andym\AppData\Local\Programs\stack\x86_64-windows\ghc-8.8.4\lib\include\ghcversion.h:
