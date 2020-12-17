@@ -31,6 +31,7 @@ data GitHubRepo =
   GitHubRepo { name :: Text
              , fullname :: Maybe Text
              , language :: Maybe Text
+			 , visibility :: Maybe Text
              } deriving (Generic, FromJSON, Show)
 
 type GitHubAPI = "users" :> Header "user-agent" UserAgent 

@@ -41,10 +41,10 @@ testGitHubCall name =
       -- now lets get the users repositories
       (SC.runClientM (GH.getUserRepos (Just "haskell-app") name) =<< env) >>= \case
         Left err -> do
-          putStrLn $ "heuston, we have a problem (gettign repos): " ++ show err
+          putStrLn $ "heuston, we have a problem (getting repos): " ++ show err
         Right res' -> do
           putStrLn $ "repositories are:" ++
-            intercalate ", " (map (\(GH.GitHubRepo n _ _ ) -> unpack n) res')
+            intercalate ", " (map (\(GH.GitHubRepo n _ _ _) -> unpack n) res')
      
   where env :: IO SC.ClientEnv
         env = do
