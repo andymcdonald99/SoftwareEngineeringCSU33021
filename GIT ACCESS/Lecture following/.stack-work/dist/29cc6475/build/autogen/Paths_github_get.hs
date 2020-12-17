@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\bin"
-libdir     = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\lib\\x86_64-windows-ghc-8.8.4\\github-get-0.1.0.0-ImVjkqlMYJeGqzHcyCtvkF"
-dynlibdir  = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\lib\\x86_64-windows-ghc-8.8.4"
-datadir    = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\share\\x86_64-windows-ghc-8.8.4\\github-get-0.1.0.0"
-libexecdir = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\libexec\\x86_64-windows-ghc-8.8.4\\github-get-0.1.0.0"
-sysconfdir = "C:\\Users\\andym\\Documents\\GitHub\\github-get\\.stack-work\\install\\1a0dafd2\\etc"
+bindir     = "C:\\Users\\andym\\Documents\\GitHub\\SoftwareEngineeringCSU33021\\GIT ACCESS\\Lecture following\\.stack-work\\install\\1a0dafd2\\bin"
+libdir     = "C:\\Users\\andym\\Documents\\GitHub\\SoftwareEngineeringCSU33021\\GIT ACCESS\\Lecture following\\.stack-work\\install\\1a0dafd2\\lib\\x86_64-windows-ghc-8.8.4\\github-get-0.1.0.0-ImVjkqlMYJeGqzHcyCtvkF"
+dynlibdir  = "C:\\Users\\andym\\Documents\\GitHub\\SoftwareEngineeringCSU33021\\GIT ACCESS\\Lecture following\\.stack-work\\install\\1a0dafd2\\lib\\x86_64-windows-ghc-8.8.4"
+datadir    = "C:\\Users\\andym\\Documents\\GitHub\\SoftwareEngineeringCSU33021\\GIT ACCESS\\Lecture following\\.stack-work\\install\\1a0dafd2\\share\\x86_64-windows-ghc-8.8.4\\github-get-0.1.0.0"
+libexecdir = "C:\\Users\\andym\\Documents\\GitHub\\SoftwareEngineeringCSU33021\\GIT ACCESS\\Lecture following\\.stack-work\\install\\1a0dafd2\\libexec\\x86_64-windows-ghc-8.8.4\\github-get-0.1.0.0"
+sysconfdir = "C:\\Users\\andym\\Documents\\GitHub\\SoftwareEngineeringCSU33021\\GIT ACCESS\\Lecture following\\.stack-work\\install\\1a0dafd2\\etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "github_get_bindir") (\_ -> return bindir)

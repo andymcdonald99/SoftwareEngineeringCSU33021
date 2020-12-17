@@ -1,18 +1,18 @@
-C:\Users\andym\Documents\GitHub\github-get\.stack-work\dist\29cc6475\build\autogen\cabal_macros.h:
-  hash: a6162f7250c1e3550efbf50a576c347d490058b504411238678b9b78dfb1bdbc
-C:\Users\andym\Documents\GitHub\github-get\src\GitHub.hs:
-  hash: 38656cc65de42a795c7b22ac0f252bfb2942e718377003cfc2480da2a0c6a27c
-C:\Users\andym\Documents\GitHub\github-get\README.md:
+? C:\Users\andym\Documents\GitHub\SoftwareEngineeringCSU33021\GIT ACCESS\Lecture following\.stack-work\dist\29cc6475\build\autogen\cabal_macros.h
+: hash: a6162f7250c1e3550efbf50a576c347d490058b504411238678b9b78dfb1bdbc
+? C:\Users\andym\Documents\GitHub\SoftwareEngineeringCSU33021\GIT ACCESS\Lecture following\.stack-work\dist\29cc6475\build\autogen\Paths_github_get.hs
+: hash: 211d551fc1e6673a1207cf667ca9d0975516c84f2f23c9c88c8f029c76417912
+C:\Users\andym\Documents\GitHub\SoftwareEngineeringCSU33021\GIT ACCESS\Lecture following\package.yaml:
+  hash: 2cc6c04270fc47e65412c27b803f00499755f418cd61620a03313c9e3823b205
+C:\Users\andym\Documents\GitHub\SoftwareEngineeringCSU33021\GIT ACCESS\Lecture following\README.md:
   hash: bf9c96dcef09bdfebb7d1a139721f5e82f8cd69385012ef700a609d945810d63
-C:\Users\andym\Documents\GitHub\github-get\github-get.cabal:
-  hash: d3306ca561d8e2cdf81f16f76384e987925264ebe2751f91055429e205d3986d
-C:\Users\andym\Documents\GitHub\github-get\ChangeLog.md:
-  hash: 6e0bb4433e86f8cd122c7909955f97806c2c901429109afc78edcae5337408fd
-C:\Users\andym\Documents\GitHub\github-get\src\Lib.hs:
-  hash: 7a596e9139a0690dacb19bdba6ce65b5d972c68514f540adf7da531285bbfd82
-C:\Users\andym\Documents\GitHub\github-get\.stack-work\dist\29cc6475\build\autogen\Paths_github_get.hs:
-  hash: 280f29d4d43a4d3e22961f869b9c8c329389c82b17b77db00687e76d6b91fcb4
 C:\Users\andym\AppData\Local\Programs\stack\x86_64-windows\ghc-8.8.4\lib\include\ghcversion.h:
   hash: 297e8571427d670d413977834f5cdfc77cb89051d2f5b8302303c442346d15d0
-C:\Users\andym\Documents\GitHub\github-get\package.yaml:
-  hash: 2cc6c04270fc47e65412c27b803f00499755f418cd61620a03313c9e3823b205
+C:\Users\andym\Documents\GitHub\SoftwareEngineeringCSU33021\GIT ACCESS\Lecture following\src\Lib.hs:
+  hash: 7a596e9139a0690dacb19bdba6ce65b5d972c68514f540adf7da531285bbfd82
+C:\Users\andym\Documents\GitHub\SoftwareEngineeringCSU33021\GIT ACCESS\Lecture following\src\GitHub.hs:
+  hash: 38656cc65de42a795c7b22ac0f252bfb2942e718377003cfc2480da2a0c6a27c
+C:\Users\andym\Documents\GitHub\SoftwareEngineeringCSU33021\GIT ACCESS\Lecture following\github-get.cabal:
+  hash: d3306ca561d8e2cdf81f16f76384e987925264ebe2751f91055429e205d3986d
+C:\Users\andym\Documents\GitHub\SoftwareEngineeringCSU33021\GIT ACCESS\Lecture following\ChangeLog.md:
+  hash: 6e0bb4433e86f8cd122c7909955f97806c2c901429109afc78edcae5337408fd
