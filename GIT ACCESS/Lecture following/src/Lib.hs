@@ -27,7 +27,7 @@ import Data.Either
 someFunc :: IO ()
 someFunc = do
   putStrLn "Let's try a GitHubCall"
-  testGitHubCall "esjmb"
+  testGitHubCall "conormccauley1999"
   putStrLn "end."
 
 
