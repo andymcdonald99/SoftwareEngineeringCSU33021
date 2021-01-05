@@ -8,6 +8,4 @@
 
 / HomeR GET POST
 
-/userdata UserDataR GET
-
 /comments CommentR POST
